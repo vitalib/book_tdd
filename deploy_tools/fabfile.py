@@ -28,7 +28,7 @@ def _update_virtualenv():
     run('./virtualenv/bin/pip install -r requirements.txt')
 
 
-def _create_of_update_dotenv():
+def _create_or_update_dotenv():
     append('.env', 'DJANGO_DEBUG_FALSE=y')
     append('.env', f'SITENAME={env.host}')
     current_contents = run('cat .env')
