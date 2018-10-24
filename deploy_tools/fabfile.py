@@ -40,7 +40,7 @@ def _create_or_update_dotenv():
 
 
 def _update_static_files():
-    run('./virtualenv/bin/python manage.py collectstatic --noinput)')
+    run('./virtualenv/bin/python manage.py collectstatic --noinput')
 
 
 def _update_database():
